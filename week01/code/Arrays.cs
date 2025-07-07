@@ -28,7 +28,7 @@ public static class Arrays
 
       }
 
-        return multiples; // replace this return statement with your own
+        return multiples.ToArray(); // replace this return statement with your own
     }
 
     /// <summary>
