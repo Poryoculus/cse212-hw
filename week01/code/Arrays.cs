@@ -14,7 +14,9 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
-
+      // PLAN: To create an array of multiples of a number, we will create a list of doubles
+      // Then we will loop through the range from 1 to 'length' and multiply the number by the current index
+      // after that we will add the result to the list and the function will return the list as an array.
 
       //Creation of a new list of doubles
       List<double> multiples = new List<double>();
@@ -45,7 +47,9 @@ public static class Arrays
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
         
-
+        //PLAN: To make the array rotate we will take the last element of the array, store it in a 
+        //variable, move it to the front of the array and then eliminate the last element of the array.
+        //this will be done 'amount' times in a loop.
 
       // Create a variable to hold the count of elements in the list
       int lastIndex = data.Count - 1;
