@@ -8,12 +8,27 @@ public static class Arrays
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
     public static double[] MultiplesOf(double number, int length)
     {
+
+
         // TODO Problem 1 Start
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
 
-        return []; // replace this return statement with your own
+
+      //Creation of a new list of doubles
+      List<double> multiples = new List<double>();
+
+      // Loop through the range from 1 to length
+      for (int i = 1; i <= length; i++)
+      {
+        multiples.Add(number * i); // adding the multiples of the number to the list
+
+
+
+      }
+
+        return multiples; // replace this return statement with your own
     }
 
     /// <summary>
@@ -29,5 +44,20 @@ public static class Arrays
         // Remember: Using comments in your program, write down your process for solving this problem
         // step by step before you write the code. The plan should be clear enough that it could
         // be implemented by another person.
+        
+
+
+      // Create a variable to hold the count of elements in the list
+      int lastIndex = data.Count - 1;
+
+      for (int i = 0; i < amount; i++) {
+        int number = data[lastIndex]; // Store the last element in a temporary variable
+        
+        data.RemoveAt(lastIndex); // Remove the last element from the list
+
+        data.Insert(0, number); // Insert the last element at the beginning of the list
+      }
+
+
     }
 }
